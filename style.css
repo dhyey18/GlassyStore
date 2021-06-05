@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+
+p,
+h2 {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+h3 {
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+main {
+  font-family: Poppins, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass {
+  min-height: 80vh;
+  width: 60%;
+  background: white;
+  padding: 1rem;
+  margin: 2rem 0;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(2rem);
+  border-radius: 2rem;
+  display: flex;
+  z-index: 10;
+}
+
+.circle1,
+.circle2,
+.circle3 {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle1 {
+  right: 15%;
+  top: 5%;
+}
+
+.circle2 {
+  left: 10%;
+  bottom: 5%;
+}
+
+.circle3 {
+  left: 69%;
+  top: 119%;
+}
+
+.user img {
+  clip-path: circle(50% at 50% 50%);
+  /* width: 40%; */
+}
+
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+
+  border-radius: 2rem;
+}
+
+.link {
+  display: flex;
+  margin: 2rem 0;
+  padding: 1rem 5rem;
+}
+
+.link h2:hover {
+  border-bottom: 2px solid dodgerblue;
+  cursor: pointer;
+  color: #002150;
+  filter: brightness(1.5);
+}
+
+.fashion {
+  flex: 2;
+}
+
+.shop-now {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  border-radius: 2rem;
+  padding: 1rem;
+  margin-bottom: 10px;
+}
+
+.shop-now:hover {
+  transform: scale(1.02);
+  filter: brightness(1.05);
+}
+
+.shop-now h2 {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* Fashion */
+
+.status {
+  margin-bottom: 3rem;
+}
+
+.status input {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  width: 50%;
+}
+
+.status input:focus {
+  outline: none;
+}
+
+.fashion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 5rem;
+}
+
+.card {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 1rem;
+  margin: 2rem 0rem;
+  padding: 2rem;
+  box-shadow: 6px 6px 20px rgb(122 122 122 / 21%);
+  justify-content: space-between;
+}
+
+.img {
+  flex: 1;
+  border-radius: 1rem;
+  height: 12rem;
+  background-size: cover;
+  box-shadow: 1px 1px 50px rgba(122, 122, 122, 0.384);
+}
+
+.img:hover {
+  filter: brightness(1.05);
+}
+
+#img1 {
+  background-image: url("413959.jpg");
+  padding: 2rem;
+}
+
+#img2 {
+  background-image: url("wright-brand.jpg");
+  background-position: center;
+  padding: 2rem;
+}
+
+#img3 {
+  background-image: url("brock-.jpg");
+  padding: 2rem;
+}
+
+.card h2 {
+  flex: 2;
+  margin-left: 1rem;
+}
